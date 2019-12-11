@@ -1,0 +1,140 @@
+<html>
+    <head> 
+        <title>School Review</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <link rel="stylesheet" type="text/css" href="./node_modules/mdbootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="./node_modules/mdbootstrap/css/mdb.min.css">
+        <link rel="stylesheet" type="text/css" href="./node_modules/mdbootstrap/css/style.css">
+        <style>
+            .congress
+            {
+                height:50px;
+                background-color:#DBD366;
+                color:#fff;
+                border-top-left-radius:25px;;
+                border-bottom-left-radius:25px;
+                font-size:23px;
+                
+            }
+            .bjp
+            {
+                height:50px;
+                background-color:#2E4259;
+                border-top-right-radius:25px;
+                border-bottom-right-radius:25px;
+                font-size:23px;
+                padding-left:00px!important;
+                
+            }
+            .middle
+            {
+                background-color:#EFE7E7;
+                width:100%;
+                display:block;
+            }
+
+        
+        </style>
+    </head>
+    <body>
+        <div class="row justify-content-center">
+            <div class="col-sm-6 ">
+                <form action="/school/review.php" action="POST">
+                    <h3 class="text-muted">Ratings</h3>
+                    <div class="row mb-2">
+
+                        <div class="col-6 congress pt-1">Facility</div>
+                        <div class="col-6 bjp text-left pt-2">
+                            <span id="rating-1" data-stars="0"></span>
+                            
+                            </div>
+                    </div>
+                    <div class="row mb-2">
+
+                        <div class="col-6 congress pt-1">Facility</div>
+                        <div class="col-6 bjp text-left pt-2">
+                            <span id="rating-2" data-stars="0"></span>
+                            
+                            </div>
+                    </div>
+                    <div class="row mb-2">
+
+                        <div class="col-6 congress pt-1">Facility</div>
+                        <div class="col-6 bjp text-left pt-2">
+                            <span id="rating-3" data-stars="0"></span>
+                            
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+
+                        <div class="col-6 congress pt-1 ">Facility</div>
+                        <div class="col-6 bjp text-left pt-2">
+                            <span id="rating-4" data-stars="0"></span>
+                            
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+
+                        <div class="col-6 congress pt-1">Facility</div>
+                        <div class="col-6 bjp text-left pt-2">
+                            <span id="rating-5" data-stars="0"></span>
+                            
+
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-12">
+                            <textarea  name="feedback" style="width:100%" placeholder="Enter Feedback" rows="2"></textarea>
+
+                        </div>
+                        
+                    </div>
+                    <button class="btn btn-primary" type="submit">Submit Review</button>
+                </form>
+                
+            </div>
+
+
+        </div>
+        <!-- script section-->
+
+        
+        <script src="./node_modules/mdbootstrap/js/jquery.min.js"></script>
+        <script src="./node_modules/mdbootstrap/js/bootstrap.min.js"></script>
+        <script src="./node_modules/mdbootstrap/js/popper.min.js"></script>
+        <script src="./node_modules/mdbootstrap/js/mdb.min.js"></script>
+        <script src="./node_modules/mdbootstrap/js/particles.js"></script>
+        <script src="./node_modules/mdbootstrap/js/app.js"></script>
+        <script src="./node_modules/mdbootstrap/js/jquery-rate-picker.js"></script>
+        <script>
+        
+            $.ratePicker("#rating-1", {
+                rate : function (stars){
+                    // $('#value1').value=stars;
+                }
+            });
+            $.ratePicker("#rating-2", {
+                rate : function (stars){
+                    // $('#value2').value=stars;
+                }
+            });
+            $.ratePicker("#rating-3", {
+                rate : function (stars){
+                    // $('#value3').value=stars;
+                }
+            });
+            $.ratePicker("#rating-4", {
+                rate : function (stars){
+                    // $('#value4').value=stars;
+                }
+            });$.ratePicker("#rating-5", {
+                rate : function (stars){
+                    // $('#value5').value=stars;
+                }
+            });
+        </script>
+        <!-- script section closed-->
+
+        </body>
+</html>

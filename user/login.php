@@ -1,18 +1,7 @@
 <html>
     <head>
         <title>Healthcare </title>
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-
-        <!-- jQuery library -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-        <!-- Latest compiled JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="../css/mdb.min.css">
-        <link rel="stylesheet" href="../css/style.css">
-        <script type="text/javascript" src="../js/mdb.min.js"></script>
-        <script type="text/javascript" src="../js/popper.min.js"></script>
+        <?php include('../include/style.php');?>
        
         <style>
         .modal
@@ -32,12 +21,7 @@
         include('../include/header.php');
         ?>
 
-        <div class="col-sm-12 header">
-            <h3 class="h3" style="color:white;">Home > User >login</h3>
-        </div>
-        <div class="col-md-3">
-
-        </div>
+        <div class="row justify-content-center mt-5">
         <div class="col-md-6 text-center pt2">
             <div class="card">
                     <br>
@@ -67,10 +51,12 @@
             
             
         </div>
+        </div>
+        
         
 
         
-        
+    <?php include('../include/scripts.php');?>
 
     </body>
 </html>

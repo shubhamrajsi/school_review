@@ -7,7 +7,7 @@ echo $email;
 echo $pass;
 
 
-$sql3="SELECT id FROM admin WHERE email1='$email' AND pass='$pass'";
+$sql3="SELECT * FROM admin WHERE email1='$email' AND pass='$pass'";
       
 $result =mysqli_query($conn,$sql3);
 if(mysqli_num_rows($result) > 0)

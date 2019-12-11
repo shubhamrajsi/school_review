@@ -7,7 +7,7 @@ echo $email;
 echo $pass;
 
 
-$sql3="SELECT school_id FROM school WHERE school_email='$email' AND school_pass='$pass'";
+$sql3="SELECT * FROM school WHERE email='$email' AND pass='$pass'";
       
 $result =mysqli_query($conn,$sql3);
 if(mysqli_num_rows($result) > 0)
@@ -15,7 +15,7 @@ if(mysqli_num_rows($result) > 0)
   while($row = mysqli_fetch_assoc($result))
   {
     echo $row['school_id'];
-    $_SESSION['id'] = $row['school_id'];
+    $_SESSION['school_id'] = $row['school_id'];
 
     echo "<script>
     alert('Successfully logged in');

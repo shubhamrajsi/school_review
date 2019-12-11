@@ -7,7 +7,7 @@ echo $email;
 echo $pass;
 
 
-$sql3="SELECT id FROM doctors WHERE email1='$email' AND pass='$pass'";
+$sql3="SELECT * FROM parent WHERE parent_email='$email' AND parent_pass='$pass'";
       
 $result =mysqli_query($conn,$sql3);
 if(mysqli_num_rows($result) > 0)
@@ -15,7 +15,7 @@ if(mysqli_num_rows($result) > 0)
   while($row = mysqli_fetch_assoc($result))
   {
     echo $row['id'];
-    $_SESSION['id'] = $row['id'];
+    $_SESSION['parent_id'] = $row['parent_id'];
 
     echo "<script>
     alert('Successfully logged in');

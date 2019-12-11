@@ -1,0 +1,301 @@
+<html>
+    <head> 
+        <title>School Review</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <link rel="stylesheet" type="text/css" href="./node_modules/mdbootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="./node_modules/mdbootstrap/css/mdb.min.css">
+        <link rel="stylesheet" type="text/css" href="./node_modules/mdbootstrap/css/style.css">
+        <style>
+        body
+        {
+            background-color:#333;
+        }
+        </style>
+    </head>
+    <body>
+        <!--Navbar -->
+        <nav class="mb-1 navbar navbar-expand-md navbar-dark default-color">
+            <a class="navbar-brand" href="#">School Review</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
+            aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+            <ul class="navbar-nav mr-auto" style="margin-left:15%;">
+                <li class="nav-item active">
+                <a class="nav-link" href="#">Home
+                    <span class="sr-only">(current)</span>
+                </a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+                </li>
+                
+            </ul>
+            <ul class="navbar-nav ml-auto nav-flex-icons">
+                <li class="nav-item">
+                <a class="nav-link waves-effect waves-light">
+                    Parent Login |
+                </a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link waves-effect waves-light">
+                    User Login |
+                </a>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link waves-effect waves-light">
+                    School Login
+                </a>
+                
+                </li>
+            </ul>
+            </div>
+        </nav>
+        <div id="particles-js"></div>
+        <!--/.Navbar -->
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body text-right " style="background-color:#80434F;">
+                            <h3 style="color:#fff;">1 user</h3>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#users">See all users</a>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body text-right" style="background-color:#549879;">
+                            <h3 style="color:#fff;">1 Parents</h3>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#parents">See all Parents</a>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body text-right" style="background-color:#786340;">
+                            <h3 style="color:#fff;">1 Review</h3>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#reviews">See all Reviews</a>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <br>
+        <div class="col-sm-12 mt-3 mb-3">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                            <div id="columnchart_values" style="width: 100%; height: 400px;"></div>
+                    </div>
+                        
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                            <div id="piechart" style="width: 100%; height: 400px;"></div>
+
+                    </div>
+                        
+
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-sm-12 middle  mt-3 mb-3 pt-2 pb-2" id="reviews" >
+            <div class="row mt-2 justify-content-center">
+                <div class="col-6">
+                    <div class="card text-center mb-1"><span class="text-muted h3">User Reviews</span></div>
+                    <div class="card mb-1 ml-2 mr-2">
+                        <div class="row">
+                            <div class="col-4 pt-2">
+                                <img src="./public/img/1.JPG" class="review_img">
+                            </div>
+                            <div class="col-8 pt-2">
+                                <span class="text-muted">School Name</span> &nbsp;&nbsp;<span class="text-warning">4.5 <i class="fa fa-star"></i></span>
+                                <p>Great school should improve on quality education</p>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                    <div class="card mb-1 ml-2 mr-2">
+                        <div class="row">
+                            <div class="col-4 pt-2">
+                                <img src="./public/img/1.JPG" class="review_img">
+                            </div>
+                            <div class="col-8 pt-2">
+                                <span class="text-muted">School Name</span> &nbsp;&nbsp;<span class="text-warning">4.5 <i class="fa fa-star"></i></span>
+                                <p>Great school should improve on quality education</p>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+
+                </div>
+                <div class="col-6">
+                        <div class="card text-center mb-1"><span class="text-muted h3">Parent Reviews</span></div>
+                        <div class="card mb-1 ml-2 mr-2">
+                            <div class="row">
+                                <div class="col-4 pt-2">
+                                    <img src="./public/img/1.JPG" class="review_img">
+                                </div>
+                                <div class="col-8 pt-2">
+                                    <span class="text-muted">School Name</span> &nbsp;&nbsp;<span class="text-warning">4.5 <i class="fa fa-star"></i></span>
+                                    <p>Great school should improve on quality education</p>
+                                </div>
+
+                            </div>
+                            
+                        </div>
+                        <div class="card mb-1 ml-2 mr-2">
+                            <div class="row">
+                                <div class="col-4 pt-2">
+                                    <img src="./public/img/1.JPG" class="review_img">
+                                </div>
+                                <div class="col-8 pt-2">
+                                    <span class="text-muted">School Name</span> &nbsp;&nbsp;<span class="text-warning">4.5 <i class="fa fa-star"></i></span>
+                                    <p>Great school should improve on quality education</p>
+                                </div>
+
+                            </div>
+                            
+                        </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-12 mt-3 middle mb-3 pt-2 pb-2">
+            <div class="row">
+                    <div class="col-sm-4 text-center">
+                            <div class="card" id="users">
+                                <span class="text-muted h3">Users</span>
+                                <table class="table responsive table-bordered">
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Email</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Name</td>
+                                        <td>Email</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Name</td>
+                                        <td>Email</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Name</td>
+                                        <td>Email</td>
+                                    </tr>
+                                    
+                                </table>
+                            </div>
+                        </div>
+                        <div class="col-sm-8 text-center">
+                            <div class="card" id="parents">
+                                <span class="text-muted h3">Parents</span><span><a href="add.php" color="#333;"><i class="fa fa-user-plus"></i>Add Parent</a></span>
+                                <table class="table responsive table-bordered">
+                                    
+                                    <tr>
+                                        <th> Name</th>
+                                        <th>Email</th>
+                                        <th>Ward id</th>
+                                        <th>Ward Name</th>
+                                        <th>Ward Rg_no</th>
+                                        <th>Ward Class</th>
+                                        <th>Ward Section</th>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+            </div>
+                
+        </div>
+
+<!-- script-->
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    google.charts.load("current", {packages:['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ["Parameters", "Reviews", { role: "style" } ],
+        ["Facility", 4.5, "#b87333"],
+        ["Academics", 4.2, "silver"],
+        ["Faculty", 4.6, "gold"],
+        ["Curicullum", 5, "color: #e5e4e2"]
+      ]);
+
+      var view = new google.visualization.DataView(data);
+      view.setColumns([0, 1,
+                       { calc: "stringify",
+                         sourceColumn: 1,
+                         type: "string",
+                         role: "annotation" },
+                       2]);
+
+      var options = {
+        title: "Parameter VS Review",
+        width: 600,
+        height: 400,
+        bar: {groupWidth: "95%"},
+        legend: { position: "none" },
+      };
+      var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
+      chart.draw(view, options);
+  }
+  </script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    google.charts.load('current', {'packages':['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+
+      var data = google.visualization.arrayToDataTable([
+        ['Metrics', 'Percentage'],
+        ['Happy',     55],
+        ['Satisfied',  35],
+        ['Not Satisfied',  20]
+      ]);
+
+      var options = {
+        title: 'Happiness Tracker'
+      };
+
+      var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+      chart.draw(data, options);
+    }
+  </script>
+        <!-- script section-->
+        <script src="./node_modules/mdbootstrap/js/jquery.min.js"></script>
+        <script src="./node_modules/mdbootstrap/js/bootstrap.min.js"></script>
+        <script src="./node_modules/mdbootstrap/js/popper.min.js"></script>
+        <script src="./node_modules/mdbootstrap/js/mdb.min.js"></script>
+        <script src="./node_modules/mdbootstrap/js/particles.js"></script>
+        <script src="./node_modules/mdbootstrap/js/app.js"></script>
+        <!-- script section closed-->
+
+    </body>
+</html>
