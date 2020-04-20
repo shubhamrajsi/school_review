@@ -151,7 +151,7 @@ while($row = mysqli_fetch_assoc($result1))
                             <img id="3" class="image_gallery" src="<?php echo $row['banner_url'];?>/2.jpg" style="width:100%;height:100px;" onclick="change(this.id);">
                         </div>
                         <div class="col-sm-4">
-                            <img  id="4" class="image_gallery" src="<?php echo $row['banner_url'];?>/4.jpg" style="width:100%;height:100px;" onclick="change(this.id);">
+                            <img  id="4" class="image_gallery" src="<?php echo $row['banner_url'];?>/1.jpg" style="width:100%;height:100px;" onclick="change(this.id);">
                         </div>
                     </div>
                     <div class="row">
@@ -363,7 +363,7 @@ while($row = mysqli_fetch_assoc($result1))
 <!-- top review and comment section------------------------------------------------------------------------------------->
 <div class="row" style="margin: 12px;">
 <!-- review start -->
-    <div class="col-sm-9 text-center">
+    <div class="col-sm-8 text-center">
         
             <h3 class=" h3">Top Reviews</h3>
             <div class="row">
@@ -378,7 +378,7 @@ while($row = mysqli_fetch_assoc($result1))
                         while($row = mysqli_fetch_assoc($result5))
                         {
                             echo '
-                            <div class="card mb-1">
+                            <div class="card mb-1 mr-2" style="width:100%;">
                                 <div class="row">
                                     <div class="col-4 pt-2">
                                         <img src="schoolreview/'.$row["uimage"].'" class="review_img">
@@ -412,7 +412,7 @@ while($row = mysqli_fetch_assoc($result1))
                     {
                         while($row = mysqli_fetch_assoc($result6))
                         {
-                            echo ' <div class="card mb-1">
+                            echo ' <div class="card mb-1 ml-2" style="width:100%;">
                             <div class="row">
                                 <div class="col-4 pt-2">
                                     <img src="schoolreview/'.$row["pimage"].'" class="review_img">
@@ -438,34 +438,34 @@ while($row = mysqli_fetch_assoc($result1))
             </div>
         
     </div>
-    <div class="col-sm-3">
-        <div class="card">
+    <div class="col-sm-4">
+        <div class="card pl-2 pr-2">
                     
-                            <h3 class="text-center">Featured in</h3>
-                            <div class="row">
-                                <div class="col-sm-6 ">
-                                    <div class="card text-center" style="height:70px;margin-top: 20px; background-color:#00bfa5;color:#fff;font-size: 20px;">
-                                        #givechance
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="card text-center" style="height:70px;margin-top: 20px; background-color:#ff455f;color:#fff;font-size: 20px;">
-                                        #newopportuinity
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="card text-center" style="height:70px;margin-top: 20px; background-color:#7e57c2;color:#fff;font-size: 20px;">
-                                        #newlife
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="card text-center" style="height:70px;margin-top: 20px; background-color:#ff9800;color:#fff;font-size: 20px;">
-                                        #bestschool
-                                    </div>
-                                </div>
-                            </div>
+            <h3 class="text-center">Featured in</h3>
+            <div class="row">
+                <div class="col-sm-6 ">
+                    <div class="card text-center" style="height:70px;margin-top: 20px; background-color:#00bfa5;color:#fff;font-size: 20px;">
+                        #givechance
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card text-center" style="height:70px;margin-top: 20px; background-color:#ff455f;color:#fff;font-size: 20px;">
+                        #newopportuinity
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card text-center" style="height:70px;margin-top: 20px; background-color:#7e57c2;color:#fff;font-size: 20px;">
+                        #newlife
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card text-center" style="height:70px;margin-top: 20px; background-color:#ff9800;color:#fff;font-size: 20px;">
+                        #bestschool
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>
@@ -664,23 +664,16 @@ while($row = mysqli_fetch_assoc($result1))
                     </div>
                     <div class="row mb-2">
 
-                        <div class="col-6 congress pt-1">Facility</div>
+                        <div class="col-6 congress pt-1">Academics</div>
                         <div class="col-6 bjp text-left pt-2">
                             <span id="rating-2" data-stars="0"></span>
                             
                             </div>
                     </div>
+                   
                     <div class="row mb-2">
 
-                        <div class="col-6 congress pt-1">Facility</div>
-                        <div class="col-6 bjp text-left pt-2">
-                            <span id="rating-3" data-stars="0"></span>
-                            
-                        </div>
-                    </div>
-                    <div class="row mb-2">
-
-                        <div class="col-6 congress pt-1 ">Facility</div>
+                        <div class="col-6 congress pt-1 ">Curriculum</div>
                         <div class="col-6 bjp text-left pt-2">
                             <span id="rating-4" data-stars="0"></span>
                             

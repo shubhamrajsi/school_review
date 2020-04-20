@@ -125,7 +125,7 @@ session_start();
     </h1>
     <div class="row">
       <div class="col-sm-4 ">
-        <div class="card card-cascade wider abc1 pt-5" style="  background: linear-gradient(to right, #360033, #0b8793);">
+        <div class="card card-cascade wider abc1 pt-5" style="  background:#565656;">
           <h1 class="text-center" >
             <a href="./school/type.php?board=cbse" style="color:#fff;">CBSE</a>
           </h5>
@@ -133,7 +133,7 @@ session_start();
       
       </div>
       <div class="col-sm-4 ">
-        <div class="card card-cascade wider abc1 pt-5" style="background: linear-gradient(to right, #485563, #29323c);">
+        <div class="card card-cascade wider abc1 pt-5" style="background:#76323F;">
           <h1 class="text-center" >
             <a href="./school/type.php?type=coed" style="color:#fff;">COED</a>
           </h5>
@@ -141,7 +141,7 @@ session_start();
       
       </div>
       <div class="col-sm-4 ">
-        <div class="card card-cascade wider abc1 pt-5" style="background: linear-gradient(to right, #5f2c82, #49a09d);">
+        <div class="card card-cascade wider abc1 pt-5" style="background:#C09F80;">
           <h1 class="text-center" >
             <a href="./school/type.php?medium=english" style="color:#fff;">ENGLISH</a>
           </h5>
@@ -174,7 +174,7 @@ session_start();
 </h1>
     <div class="row">
     <?php
-                    $sql5 = "SELECT review.overall as overall,school.* from school join review on review.school_id=school.school_id";
+                    $sql5 = "SELECT review.overall as overall,school.* from school join review on review.school_id=school.school_id where review_id>='14' AND review_id<='17'";
                     $result5 = mysqli_query($conn,$sql5);
                     if(mysqli_num_rows($result5)>0)
                     {
@@ -217,7 +217,7 @@ session_start();
                     }
                     else
                     {
-                        echo "nopes";
+                        echo mysqli_error($conn);
                     }
                     ?>
       
